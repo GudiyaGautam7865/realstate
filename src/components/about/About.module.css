@@ -1,0 +1,247 @@
+.aboutContainer {
+  margin-top: 100px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+ 
+ 
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.heroSection h1 {
+  font-size: 4rem; /* Increased font size for better visual impact */
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.heroImage {
+  width: calc(100% - 12%); /* Calculate width with 20px margin on each side */
+  margin:0px 6% ; /* Apply 20px margin left and right */
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  top: 0;
+  transform: translateY(0);
+}
+.stats {
+  /* Make stats full width */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 40px;
+  font-weight: 400;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.statNumber {
+  font-size: 2.2rem; /* Slightly increase font size */
+  font-weight: bold;
+  color: #000000;
+}
+
+.statItem {
+  text-align: center;
+}
+
+
+.statLabel {
+  font-size: 1.5rem;
+  color: #242323;
+}
+
+.featuresSection {
+  margin: 60px 0;
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.featuresGrid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featureCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.featureTitle {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.featureDescription {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.learnMore {
+  font-size: small;
+  text-decoration: none;
+  color: #0e2d4e;
+  font-weight: bold;
+}
+
+.propertySection {
+  margin: 0px 80px ;
+  display: flex;
+  gap: 40px;
+  background-image: linear-gradient(120deg, #dbf5f3 0%, #f7d7a8 100%);
+  align-items: center;
+}
+
+.propertyImage {
+  flex: 1;
+  width: 90%;
+  
+  max-width: 650px;
+  border-radius: 15px;
+}
+
+.propertyContent {
+  flex: 1;
+}
+
+.propertyTitle {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.communitySection {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.communityContent {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.communityText {
+  flex: 1;
+}
+
+.communityText h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.communityImage {
+  flex: 1;
+  text-align: center;
+}
+
+.communityImage img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+}
+
+.teamSection {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.teamMember {
+  text-align: center;
+  width: 180px;
+}
+
+.teamMember img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.teamMember h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.teamMember p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contactSection {
+  margin: 0px 25% ;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.contactForm {
+ 
+  margin: 0 auto;
+ 
+}
+
+.formGroup input,
+.formGroup textarea {
+ 
+  margin-bottom: 15px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+.newsletterSection {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  margin: 4px 80px ;
+  background-image: linear-gradient(120deg, #dbf5f3 0%, #f7d7a8 100%);
+}
+
+.newsletterContent {
+  padding-left: 40px;
+  flex: 1;
+}
+
+
+
+.newsletterImage img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  
+
+}

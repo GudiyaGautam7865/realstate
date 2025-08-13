@@ -1,0 +1,167 @@
+.property-detail-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 100%;
+  margin: 0 ;
+  margin-top: -40px;
+ 
+}
+
+/* Full-width banner */
+.property-banner img {
+  width: 100%;
+  height: 650px;
+  margin-bottom: 20px;
+}
+
+/* Property Header */
+.property-header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.property-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.property-address,
+.property-type,
+.property-bedrooms,
+.property-price {
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+.property-price strong {
+  color: #000000;
+}
+
+/* Main Content Layout */
+.property-main {
+  margin-left: 10%;
+  margin-right:10%;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Project Summary */
+.project-summary {
+  flex: 2;
+  text-align: left;
+}
+
+.project-summary h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-gap: 10px; /* Space between grid items */
+}
+
+.grid-item p{
+  
+ padding-bottom: 20px;
+}
+.project-summary ul li strong {
+  font-weight: bold;
+}
+/* Align starting price with property title */
+.property-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.property-price {
+  font-size: 1.8rem;
+  
+  color: #000000;
+  margin-top: -30px;
+  right: 40%;
+  
+  position: absolute;
+}
+
+
+/* Contact Form */
+.property-contact {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.property-contact h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+
+
+.checkbox-row{
+ display: flex;
+ align-items: flex-start;
+ 
+}
+
+
+
+.contact-btn {
+  background: #d32f2f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-btn:hover {
+  background: #b71c1c;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .property-main {
+    flex-direction: column; /* Stack content vertically */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .property-contact {
+    order: 1; /* Move the contact form to the bottom */
+    margin-top: 20px; /* Optional: adds space above the contact form */
+  }
+
+  .property-price {
+    font-size: 1.5rem; /* Adjust price font size on small screens */
+    position: static; /* Reset position to normal */
+    margin-top: 0; /* Adjust price margin */
+  }
+}

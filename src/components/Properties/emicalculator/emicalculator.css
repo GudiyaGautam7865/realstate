@@ -1,0 +1,147 @@
+.calculator-container {
+    max-width: 600px; /* Reduced width */
+    margin: auto;
+    background: #fff;
+   
+    padding: 15px; /* Reduced padding */
+    border-radius: 6px; /* Reduced border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calculator-container h1 {
+    text-align: center;
+    color: #e63946;
+    font-size: 20px; /* Reduced font size */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Maintained border-radius */
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .slider-container {
+    margin-top: 8px; /* Reduced margin */
+  }
+  
+  .slider-container input[type="range"] {
+    width: 100%;
+  }
+  
+  .result-container {
+    background: #f1f1f1;
+    padding: 12px; /* Reduced padding */
+    border-radius: 6px; /* Reduced border radius */
+    margin-top: 15px; /* Reduced margin */
+  }
+  
+  .result-container p {
+    margin: 0 0 8px; /* Reduced margin */
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .apply-button {
+    display: block;
+    text-align: center;
+    background: #e63946;
+    color: #fff;
+    padding: 8px 16px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px; /* Reduced margin */
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .apply-button:hover {
+    background: #c72535;
+  }
+  
+  /* Media Queries */
+  
+  /* For small screens (mobile) */
+  @media screen and (max-width: 600px) {
+    .calculator-container {
+      padding: 10px; /* Further reduced padding */
+    }
+  
+    .form-group label {
+      font-size: 12px; /* Reduced font size */
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 6px; /* Reduced padding */
+      font-size: 12px; /* Reduced font size */
+    }
+  
+    .result-container p {
+      font-size: 12px; /* Reduced font size */
+    }
+  
+    .apply-button {
+      padding: 6px 12px; /* Reduced padding */
+      font-size: 12px; /* Reduced font size */
+    }
+  }
+  
+  /* For medium screens (tablets) */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .calculator-container {
+      padding: 15px;
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 8px;
+      font-size: 13px;
+    }
+  
+    .result-container p {
+      font-size: 13px;
+    }
+  
+    .apply-button {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+  
+  /* For large screens (desktops) */
+  @media screen and (min-width: 1025px) {
+    .calculator-container {
+      max-width: 600px;
+      padding: 20px; /* Slightly larger padding for desktops */
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .result-container p {
+      font-size: 14px;
+    }
+  
+    .apply-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  

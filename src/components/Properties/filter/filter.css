@@ -1,0 +1,132 @@
+.filter-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.filter label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #e2cece;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.price-range {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Media Query for full screen (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+  .filters {
+    flex-wrap: nowrap;
+    gap: 10px; /* Reduce gap between filter items */
+    justify-content: space-between;
+  }
+
+  .filter {
+    flex: 1; /* Allow equal width for all filters */
+    max-width: 150px; /* Limit the width of each filter */
+  }
+
+  select,
+  input[type="range"] {
+    font-size: 12px; /* Adjust font size for compact layout */
+    padding: 8px;
+  }
+
+  .price-range {
+    font-size: 12px;
+  }
+}
+
+/* Media Query for tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .filters {
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .filter {
+    width: 45%;
+  }
+
+  select,
+  input[type="range"] {
+    font-size: 12px;
+  }
+}
+
+/* Media Query for mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .filter label {
+    font-size: 14px;
+  }
+
+  select,
+  input[type="range"] {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .price-range {
+    font-size: 12px;
+  }
+}
